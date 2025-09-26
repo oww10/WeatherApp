@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		50A36EFA2E8642CB0023B81B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 50A36EF92E8642CB0023B81B /* SnapKit */; };
+		50A36EFD2E8642DA0023B81B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 50A36EFC2E8642DA0023B81B /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		50A36EB22E861D5D0023B81B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -55,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A36EFA2E8642CB0023B81B /* SnapKit in Frameworks */,
+				50A36EFD2E8642DA0023B81B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +120,8 @@
 			);
 			name = WeatherApp;
 			packageProductDependencies = (
+				50A36EF92E8642CB0023B81B /* SnapKit */,
+				50A36EFC2E8642DA0023B81B /* Alamofire */,
 			);
 			productName = WeatherApp;
 			productReference = 50A36E982E861D5C0023B81B /* WeatherApp.app */;
@@ -190,6 +199,10 @@
 			);
 			mainGroup = 50A36E8F2E861D5C0023B81B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50A36EF82E8642CB0023B81B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				50A36EFB2E8642DA0023B81B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50A36E992E861D5C0023B81B /* Products */;
 			projectDirPath = "";
@@ -543,6 +556,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50A36EF82E8642CB0023B81B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		50A36EFB2E8642DA0023B81B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50A36EF92E8642CB0023B81B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50A36EF82E8642CB0023B81B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		50A36EFC2E8642DA0023B81B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50A36EFB2E8642DA0023B81B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50A36E902E861D5C0023B81B /* Project object */;
 }
